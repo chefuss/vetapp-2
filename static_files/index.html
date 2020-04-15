@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VetApp</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Hellouuuu to the VetApp</h1>
+  <div id="content">
+    <h2>Qué necesitas?</h2>
+    <p>Dime lo que necesitas y te diré quien eres.</p>
+    <div id="buscador">
+      <label for="buscar">Buscar mascota</label>
+      <input type="text" name="buscar" id="buscar" placeholder="coloca el nombre de la mascota">
+      <button id="botonBuscar">Buscar</button>
+    </div>
+    <div id="botones">
+      <button id="verMascotas">Ver todas las mascotas</button>
+      <button id="verDuenos">Ver todos los dueños</button>
+      <button id="agregarMascota" class="secondary-button">Agregar nueva mascota</button>
+    </div>
+    <div id="resultados">Aquí van a ir los resultados de la búsqueda</div>
+    <form method="POST" id="nuevaMascotaForm" class="hidden" enctype="multipart/form-data">
+      <h2>Agregar una nueva mascota</h2>
+      <fieldset>
+        <legend>Datos de la mascota</legend>
+        <div class="input-group">
+          <label for="nombre">Nombre de la mascota</label>
+          <input type="text" name="nombre" id="nombre" placeholder="nombre de la mascota">
+        </div>
+        <div class="input-group">
+          <label for="descripcion">Descripción de la mascota</label> 
+          <textarea name="descripcion" id="descripcion" placeholder="descripción de la mascota"></textarea>
+        </div>
+        <div class="input-group">
+          <label for="imagen">Imagen de la mascota</label>
+          <input type="file" name="imagen" id="imagen" accept="image/png, image/jpeg">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Datos del dueño</legend>
+        <div class="input-group">
+          <label for="nombre-dueno">Nombre del Dueño</label>
+          <input type="text" name="nombre-dueno" id="nombre-dueno" placeholder="nombre del dueño">
+        </div>
+        <div class="input-group">
+          <label for="telefono">Teléfono del dueño</label>
+          <input type="text" name="telefono" id="telefono" placeholder="telefono del dueño">
+        </div>
+        <div class="input-group">
+          <button id="guardar">Guardar</button> <button id="cancelar">Cancelar</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  </div>
+  <script src="js/helpers.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
