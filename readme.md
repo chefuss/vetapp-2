@@ -3,7 +3,7 @@
 Utilizaremos un servidor creado con node/express.
 En esta segunda parte vamos a:
 - Crear la base de datos, tablas e incluir datos mediante mysql.
-- Incluir packete mysql en node.
+- Incluir paquete mysql en node.
 - Conectar con la base de datos.
 - Hacer las queries a la base de datos correspondientes.
 
