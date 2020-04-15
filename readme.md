@@ -53,18 +53,18 @@ vetapp
 
 ### datos para insertar en pet
 
-´´´
+```
 INSERT INTO pet (pet_id, pet_name, pet_description, pet_picture, pet_last_visit, pet_owner) VALUES 
 (1, 'Simón', 'El nene mimado', 'simon.jpg', '2019-12-28', 1),
 (2, 'Hugo', 'Se cree piraña', 'hugo.jpg', '2019-10-20', 2),
 (3, 'Felipe', 'Es es chico lindo del barrio', 'felipe.jpg', '2018-08-17', 3),
 (4, 'Maggi', 'Es brava', 'maggi.jpg', '2019-02-20', 4),
 (5, 'Rocco', 'Es muy inteligente', 'rocco.jpg', '2020-01-12', 5);
-´´´
+```
 
 ### datos para insertar en owner
 
-´´´
+```
 INSERT INTO owner (owner_id, owner_name, owner_phone, owner_pet)
 VALUES
 (1, 'Cristian', 344332323, 1),
@@ -75,4 +75,4 @@ VALUES
 (6, 'Matias', 23324390, 2),
 (7, 'Nico', 2438934340, 4),
 (8, 'Nacho', 432490932, 1);
-´´´
+```
